@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 // Desafio de Xadrez - MateCheck
 int bispo, torre, rainha, cavalo_movimento_l;
@@ -46,14 +46,63 @@ printf("***============================***\n");
         printf("Esquerda \n");
      }
      
-     printf("***============================***\n");
+     printf("***============================***\n");*/
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    #include <stdio.h>
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+// Bispo:
+void moverBispo(int casasB)
+{
+    if (casasB > 0)
+    {
+        printf("Direita \n");
+        moverBispo(casasB - 1);
+    }
+}
 
+// Torre:
+void movertorre(int casasT)
+{
+    if (casasT > 0)
+    {
+        printf("Direita \n");
+        movertorre(casasT - 1);
+    }
+}
+
+int main()
+{
+    // Bispo
+
+    movertorre(5);
+
+    printf("=======================\n");
+
+    moverBispo(5);
+
+    printf("=======================\n");
+
+    // Rainha:
+
+    int casasR;
+
+    for (casasR = 0; casasR <= 7; casasR++) // Rainha 8 casa para Esquerda!
+    {
+        printf("Esquerda \n");
+    }
+
+    printf("=======================\n");
+
+    // Cavalo;
+
+    int cavaloCima, cavaloDireita;
+
+    for (cavaloCima = 0, cavaloDireita = 0; cavaloCima <= 2 && cavaloDireita <= 1; cavaloCima++, cavaloDireita++)
+    {
+        printf("Cima\n");
+    }
+    printf("Direita\n");
     return 0;
 }
+
