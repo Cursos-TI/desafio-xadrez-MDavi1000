@@ -73,12 +73,12 @@ void movertorre(int casasT)
 
 int main()
 {
-    // Bispo
-
+   //Torre
     movertorre(5);
 
     printf("=======================\n");
-
+   
+    // Bispo
     moverBispo(5);
 
     printf("=======================\n");
