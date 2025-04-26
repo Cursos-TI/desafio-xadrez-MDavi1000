@@ -51,7 +51,7 @@ printf("***============================***\n");
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     #include <stdio.h>
 
-// Bispo:
+// Recursiva Bispo:
 void moverBispo(int casasB)
 {
     if (casasB > 0)
@@ -61,7 +61,7 @@ void moverBispo(int casasB)
     }
 }
 
-// Torre:
+// Recursiva Torre:
 void movertorre(int casasT)
 {
     if (casasT > 0)
@@ -73,12 +73,12 @@ void movertorre(int casasT)
 
 int main()
 {
-   //Torre
+   //Torre Recursiva
     movertorre(5);
 
     printf("=======================\n");
    
-    // Bispo
+    // Bispo Recursiva
     moverBispo(5);
 
     printf("=======================\n");
